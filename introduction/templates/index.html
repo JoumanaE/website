@@ -1,0 +1,48 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/introduction.css' %}">
+        <link rel="stylesheet" href="{% static 'css/introduction.scss' %}"> 
+        <script src="{% static 'script/introduction.js' %}"></script> 
+        <title>Website</title>
+    </head>
+
+    <header>
+    	<nav class="navbar navbar-default">
+    		<div class="container-fluid">
+    		<ul class="nav navbar-nav navbar-right">
+      		<h4>Django built</h4>
+    		</ul>
+
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav">
+        			<li><a href=""><span1> Homepage </span1></a></li>
+        			<li><a href="/about/"><span1> About </span1></a></li>
+        			<li><a href="/projects/"><span1> Projects </span1></a></li>
+      			</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+   </header>
+    
+    <body>
+    	<div class="row">
+    		<div class="col-md-12">
+        		<h1>Howdy! I am Learning Django!</h1>
+        		<p> This website was biuild to help me understand how Django works. I built other projects using the Django framework. So far, I built a blog and a website.</p>
+        	</div>
+        </div>
+
+    </body>
+
+
+  
+
+</html>
