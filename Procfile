@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi; collectstatic --noinput; 
+web: gunicorn mysite.wsgi
