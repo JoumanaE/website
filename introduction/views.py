@@ -14,5 +14,7 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
 	template_name = "about.html"
 
+	#projects view 
+
 class ProjectsPageView(TemplateView):
 	template_name = "projects.html"

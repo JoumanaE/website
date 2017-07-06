@@ -10,6 +10,7 @@
         		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> 
         		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
         		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         		<link rel="stylesheet" href="{% static 'css/introduction.css' %}">	
     </head>
         <header>
@@ -21,10 +22,12 @@
 
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       			<ul class="nav navbar-nav">
-        			<li><a href=""><span1> Homepage </span1></a></li>
-        			<li><a href="/about/"><span1> About </span1></a></li>
-        			<li><a href="/projects/"><span1> Projects </span1></a></li>
+        			<li><a href="{% url 'templates/index.html' %}"><span1> Homepage </span1></a></li>
+        			<li><a href="{% url 'templates/about.html' %}"><span1> About </span1></a></li>
+        			<li><a href="{% url 'templates/projects.html' %}"><span1> Projects </span1></a></li>
       			</ul>
+
+            <a href="{% url 'myapp:mypage' %}">Click here</a>
     		</div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
 	</nav>
